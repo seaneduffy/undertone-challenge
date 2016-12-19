@@ -1,0 +1,1699 @@
+/* line 71, ../../client/sass/takeover.scss */
+.abs-pos, #takeover #confetti-container, #takeover #panels, #takeover #panels .portland, #takeover #panels .dallas, #takeover #panels .portland-close, #takeover #panels .dallas-close, #takeover #panels .portland-open, #takeover #panels .dallas-open, #takeover #logos, #takeover #logos .dallas, #takeover #logos .dallas .out, #takeover #logos .portland, #takeover #logos .portland .out, #takeover #anim-text, #takeover #anim-text .one, #takeover #anim-text .one .out, #takeover #anim-text .game, #takeover #anim-text .game .out, #takeover #anim-text .toglory, #takeover #anim-text .toglory .out, #takeover #finalframe, #takeover #finalframe .bg, #takeover #finalframe .cta, #takeover #finalframe .trophy, #takeover #finalframe .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 77, ../../client/sass/takeover.scss */
+.fullscreen, #takeover #confetti-container, #takeover #panels, #takeover #panels .portland, #takeover #panels .dallas, #takeover #panels .portland-close, #takeover #panels .dallas-close, #takeover #panels .portland-open, #takeover #panels .dallas-open, #takeover #logos, #takeover #logos .dallas, #takeover #logos .dallas .out, #takeover #logos .portland, #takeover #logos .portland .out, #takeover #anim-text, #takeover #anim-text .one, #takeover #anim-text .one .out, #takeover #anim-text .game, #takeover #anim-text .game .out, #takeover #anim-text .toglory, #takeover #anim-text .toglory .out, #takeover #finalframe, #takeover #finalframe .bg, #takeover #finalframe .cta, #takeover #finalframe .trophy {
+  width: 100vw;
+  height: 100vh;
+}
+
+@-webkit-keyframes takeover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes takeover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes takeover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes takeover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes confetti-ver1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-150vh);
+  }
+}
+@-moz-keyframes confetti-ver1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-150vh);
+  }
+}
+@-o-keyframes confetti-ver1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-150vh);
+  }
+}
+@keyframes confetti-ver1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-150vh);
+  }
+}
+@-webkit-keyframes confetti-ver2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-170vh);
+  }
+}
+@-moz-keyframes confetti-ver2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-170vh);
+  }
+}
+@-o-keyframes confetti-ver2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-170vh);
+  }
+}
+@keyframes confetti-ver2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-170vh);
+  }
+}
+@-webkit-keyframes confetti-ver3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-190vh);
+  }
+}
+@-moz-keyframes confetti-ver3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-190vh);
+  }
+}
+@-o-keyframes confetti-ver3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-190vh);
+  }
+}
+@keyframes confetti-ver3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-190vh);
+  }
+}
+@-webkit-keyframes confetti-ver4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-210vh);
+  }
+}
+@-moz-keyframes confetti-ver4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-210vh);
+  }
+}
+@-o-keyframes confetti-ver4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-210vh);
+  }
+}
+@keyframes confetti-ver4 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-210vh);
+  }
+}
+@-webkit-keyframes confetti-ver5 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-230vh);
+  }
+}
+@-moz-keyframes confetti-ver5 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-230vh);
+  }
+}
+@-o-keyframes confetti-ver5 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-230vh);
+  }
+}
+@keyframes confetti-ver5 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-230vh);
+  }
+}
+@-webkit-keyframes confetti-ver6 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250vh);
+  }
+}
+@-moz-keyframes confetti-ver6 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250vh);
+  }
+}
+@-o-keyframes confetti-ver6 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250vh);
+  }
+}
+@keyframes confetti-ver6 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250vh);
+  }
+}
+@-webkit-keyframes confetti-hor1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+@-moz-keyframes confetti-hor1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+@-o-keyframes confetti-hor1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+@keyframes confetti-hor1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+@-webkit-keyframes confetti-hor2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20vw);
+  }
+}
+@-moz-keyframes confetti-hor2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20vw);
+  }
+}
+@-o-keyframes confetti-hor2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20vw);
+  }
+}
+@keyframes confetti-hor2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20vw);
+  }
+}
+@-webkit-keyframes confetti-hor3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+@-moz-keyframes confetti-hor3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+@-o-keyframes confetti-hor3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+@keyframes confetti-hor3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+@-webkit-keyframes confetti-hor4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@-moz-keyframes confetti-hor4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@-o-keyframes confetti-hor4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@keyframes confetti-hor4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10vw);
+  }
+}
+@-webkit-keyframes confetti-hor5 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+@-moz-keyframes confetti-hor5 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+@-o-keyframes confetti-hor5 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+@keyframes confetti-hor5 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+@-webkit-keyframes confetti-hor6 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+@-moz-keyframes confetti-hor6 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+@-o-keyframes confetti-hor6 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+@keyframes confetti-hor6 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+@-webkit-keyframes confetti-rot1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+@-moz-keyframes confetti-rot1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+@-o-keyframes confetti-rot1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+@keyframes confetti-rot1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+@-webkit-keyframes confetti-rot2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@-moz-keyframes confetti-rot2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@-o-keyframes confetti-rot2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes confetti-rot2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes confetti-rot3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@-moz-keyframes confetti-rot3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@-o-keyframes confetti-rot3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes confetti-rot3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@-webkit-keyframes confetti-rot4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@-moz-keyframes confetti-rot4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@-o-keyframes confetti-rot4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes confetti-rot4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes confetti-rot5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@-moz-keyframes confetti-rot5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@-o-keyframes confetti-rot5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes confetti-rot5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes confetti-rot6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@-moz-keyframes confetti-rot6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@-o-keyframes confetti-rot6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@keyframes confetti-rot6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@-webkit-keyframes panel-portland-close {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes panel-portland-close {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes panel-portland-close {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes panel-portland-close {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes panel-dallas-close {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes panel-dallas-close {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes panel-dallas-close {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes panel-dallas-close {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes panel-portland-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-moz-keyframes panel-portland-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-o-keyframes panel-portland-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes panel-portland-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-webkit-keyframes panel-dallas-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-moz-keyframes panel-dallas-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-o-keyframes panel-dallas-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes panel-dallas-open {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-webkit-keyframes logo-portland {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-moz-keyframes logo-portland {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-o-keyframes logo-portland {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes logo-portland {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-webkit-keyframes logo-dallas {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(-10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(-8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(-5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-moz-keyframes logo-dallas {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(-10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(-8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(-5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-o-keyframes logo-dallas {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(-10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(-8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(-5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes logo-dallas {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateX(-10vw);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(2.5) translateX(-8vw);
+  }
+  90% {
+    opacity: .9;
+    transform: scale(1.4) translateX(-5vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+@-webkit-keyframes logo-portland-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-moz-keyframes logo-portland-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-o-keyframes logo-portland-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes logo-portland-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+@-webkit-keyframes logo-dallas-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-moz-keyframes logo-dallas-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-o-keyframes logo-dallas-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes logo-dallas-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@-webkit-keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-moz-keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-o-keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes text-in {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes text-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes text-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes text-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes text-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes ff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes ff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes trophy {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-moz-keyframes trophy {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-o-keyframes trophy {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes trophy {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes remove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200vh);
+  }
+}
+@-moz-keyframes remove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200vh);
+  }
+}
+@-o-keyframes remove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200vh);
+  }
+}
+@keyframes remove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200vh);
+  }
+}
+/* line 248, ../../client/sass/takeover.scss */
+#takeover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent, transparent);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent, transparent);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent, transparent);
+  opacity: 0;
+  -webkit-animation: takeover 0.5s linear 0.5s forwards;
+  -moz-animation: takeover 0.5s linear 0.5s forwards;
+  -o-animation: takeover 0.5s linear 0.5s forwards;
+  animation: takeover 0.5s linear 0.5s forwards;
+}
+/* line 261, ../../client/sass/takeover.scss */
+#takeover svg {
+  opacity: 0;
+}
+/* line 265, ../../client/sass/takeover.scss */
+#takeover #trophy-hoist {
+  position: absolute;
+  z-index: 0;
+  top: 100%;
+  left: 40%;
+  width: 100vw;
+  height: 80vh;
+  transform: translateY(0);
+  background: url(/img/cup-hoist.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: trophy 1s ease-in 1.5s forwards;
+  -moz-animation: trophy 1s ease-in 1.5s forwards;
+  -o-animation: trophy 1s ease-in 1.5s forwards;
+  animation: trophy 1s ease-in 1.5s forwards;
+}
+/* line 279, ../../client/sass/takeover.scss */
+#takeover #confetti-container {
+  z-index: 1;
+}
+/* line 284, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece, #takeover #confetti-container .piece-ver1, #takeover #confetti-container .piece-ver2, #takeover #confetti-container .piece-ver3, #takeover #confetti-container .piece-hor1, #takeover #confetti-container .piece-hor2, #takeover #confetti-container .piece-hor3 {
+  position: absolute;
+}
+/* line 288, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece {
+  top: 100%;
+}
+/* line 291, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece svg {
+  opacity: 1;
+}
+/* line 296, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-ver1 {
+  -webkit-animation: confetti-ver1 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-ver1 5s ease-out 1.5s forwards;
+  -o-animation: confetti-ver1 5s ease-out 1.5s forwards;
+  animation: confetti-ver1 5s ease-out 1.5s forwards;
+}
+/* line 300, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-ver2 {
+  -webkit-animation: confetti-ver2 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-ver2 5s ease-out 1.5s forwards;
+  -o-animation: confetti-ver2 5s ease-out 1.5s forwards;
+  animation: confetti-ver2 5s ease-out 1.5s forwards;
+}
+/* line 304, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-ver3 {
+  -webkit-animation: confetti-ver3 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-ver3 5s ease-out 1.5s forwards;
+  -o-animation: confetti-ver3 5s ease-out 1.5s forwards;
+  animation: confetti-ver3 5s ease-out 1.5s forwards;
+}
+/* line 308, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-hor1 {
+  -webkit-animation: confetti-hor1 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-hor1 5s ease-out 1.5s forwards;
+  -o-animation: confetti-hor1 5s ease-out 1.5s forwards;
+  animation: confetti-hor1 5s ease-out 1.5s forwards;
+}
+/* line 312, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-hor2 {
+  -webkit-animation: confetti-hor2 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-hor2 5s ease-out 1.5s forwards;
+  -o-animation: confetti-hor2 5s ease-out 1.5s forwards;
+  animation: confetti-hor2 5s ease-out 1.5s forwards;
+}
+/* line 316, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-hor3 {
+  -webkit-animation: confetti-hor3 5s ease-out 1.5s forwards;
+  -moz-animation: confetti-hor3 5s ease-out 1.5s forwards;
+  -o-animation: confetti-hor3 5s ease-out 1.5s forwards;
+  animation: confetti-hor3 5s ease-out 1.5s forwards;
+}
+/* line 320, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot1 {
+  -webkit-animation: confetti-rot1 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot1 5s linear 1.5s forwards;
+  -o-animation: confetti-rot1 5s linear 1.5s forwards;
+  animation: confetti-rot1 5s linear 1.5s forwards;
+}
+/* line 324, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot2 {
+  -webkit-animation: confetti-rot2 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot2 5s linear 1.5s forwards;
+  -o-animation: confetti-rot2 5s linear 1.5s forwards;
+  animation: confetti-rot2 5s linear 1.5s forwards;
+}
+/* line 328, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot3 {
+  -webkit-animation: confetti-rot3 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot3 5s linear 1.5s forwards;
+  -o-animation: confetti-rot3 5s linear 1.5s forwards;
+  animation: confetti-rot3 5s linear 1.5s forwards;
+}
+/* line 332, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot4 {
+  -webkit-animation: confetti-rot4 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot4 5s linear 1.5s forwards;
+  -o-animation: confetti-rot4 5s linear 1.5s forwards;
+  animation: confetti-rot4 5s linear 1.5s forwards;
+}
+/* line 336, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot5 {
+  -webkit-animation: confetti-rot5 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot5 5s linear 1.5s forwards;
+  -o-animation: confetti-rot5 5s linear 1.5s forwards;
+  animation: confetti-rot5 5s linear 1.5s forwards;
+}
+/* line 340, ../../client/sass/takeover.scss */
+#takeover #confetti-container .piece-rot6 {
+  -webkit-animation: confetti-rot6 5s linear 1.5s forwards;
+  -moz-animation: confetti-rot6 5s linear 1.5s forwards;
+  -o-animation: confetti-rot6 5s linear 1.5s forwards;
+  animation: confetti-rot6 5s linear 1.5s forwards;
+}
+/* line 345, ../../client/sass/takeover.scss */
+#takeover #panels {
+  z-index: 3;
+  -webkit-animation: remove 0.1s linear 11s forwards;
+  -moz-animation: remove 0.1s linear 11s forwards;
+  -o-animation: remove 0.1s linear 11s forwards;
+  animation: remove 0.1s linear 11s forwards;
+}
+/* line 351, ../../client/sass/takeover.scss */
+#takeover #panels .portland {
+  background: url(/img/panel-portland.png) no-repeat;
+  background-position: top left;
+  background-size: 100vw auto;
+}
+/* line 360, ../../client/sass/takeover.scss */
+#takeover #panels .dallas {
+  background: url(/img/panel-dallas.png) no-repeat;
+  background-position: top right;
+  background-size: 100vw auto;
+}
+/* line 368, ../../client/sass/takeover.scss */
+#takeover #panels .portland-close {
+  transform: translateX(-100vw);
+  -webkit-animation: panel-portland-close 0.5s linear 5.5s forwards;
+  -moz-animation: panel-portland-close 0.5s linear 5.5s forwards;
+  -o-animation: panel-portland-close 0.5s linear 5.5s forwards;
+  animation: panel-portland-close 0.5s linear 5.5s forwards;
+}
+/* line 375, ../../client/sass/takeover.scss */
+#takeover #panels .dallas-close {
+  transform: translateX(100vw);
+  -webkit-animation: panel-dallas-close 0.5s linear 5.5s forwards;
+  -moz-animation: panel-dallas-close 0.5s linear 5.5s forwards;
+  -o-animation: panel-dallas-close 0.5s linear 5.5s forwards;
+  animation: panel-dallas-close 0.5s linear 5.5s forwards;
+}
+/* line 382, ../../client/sass/takeover.scss */
+#takeover #panels .portland-open {
+  -webkit-animation: panel-portland-open 0.5s linear 10.5s forwards;
+  -moz-animation: panel-portland-open 0.5s linear 10.5s forwards;
+  -o-animation: panel-portland-open 0.5s linear 10.5s forwards;
+  animation: panel-portland-open 0.5s linear 10.5s forwards;
+}
+/* line 388, ../../client/sass/takeover.scss */
+#takeover #panels .dallas-open {
+  -webkit-animation: panel-dallas-open 0.5s linear 10.5s forwards;
+  -moz-animation: panel-dallas-open 0.5s linear 10.5s forwards;
+  -o-animation: panel-dallas-open 0.5s linear 10.5s forwards;
+  animation: panel-dallas-open 0.5s linear 10.5s forwards;
+}
+/* line 396, ../../client/sass/takeover.scss */
+#takeover #logos {
+  z-index: 4;
+  -webkit-animation: remove 0.1s linear 11s forwards;
+  -moz-animation: remove 0.1s linear 11s forwards;
+  -o-animation: remove 0.1s linear 11s forwards;
+  animation: remove 0.1s linear 11s forwards;
+}
+/* line 402, ../../client/sass/takeover.scss */
+#takeover #logos .dallas {
+  opacity: 0;
+  -webkit-animation: logo-dallas 0.5s ease-in 7.5s forwards;
+  -moz-animation: logo-dallas 0.5s ease-in 7.5s forwards;
+  -o-animation: logo-dallas 0.5s ease-in 7.5s forwards;
+  animation: logo-dallas 0.5s ease-in 7.5s forwards;
+}
+/* line 408, ../../client/sass/takeover.scss */
+#takeover #logos .dallas .out {
+  background: url(/img/logo-dallas.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: logo-dallas-out 0.5s linear 10.5s forwards;
+  -moz-animation: logo-dallas-out 0.5s linear 10.5s forwards;
+  -o-animation: logo-dallas-out 0.5s linear 10.5s forwards;
+  animation: logo-dallas-out 0.5s linear 10.5s forwards;
+}
+/* line 417, ../../client/sass/takeover.scss */
+#takeover #logos .portland {
+  opacity: 0;
+  -webkit-animation: logo-portland 0.5s ease-in 7.5s forwards;
+  -moz-animation: logo-portland 0.5s ease-in 7.5s forwards;
+  -o-animation: logo-portland 0.5s ease-in 7.5s forwards;
+  animation: logo-portland 0.5s ease-in 7.5s forwards;
+}
+/* line 423, ../../client/sass/takeover.scss */
+#takeover #logos .portland .out {
+  background: url(/img/logo-portland.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: logo-portland-out 0.5s linear 10.5s forwards;
+  -moz-animation: logo-portland-out 0.5s linear 10.5s forwards;
+  -o-animation: logo-portland-out 0.5s linear 10.5s forwards;
+  animation: logo-portland-out 0.5s linear 10.5s forwards;
+}
+/* line 433, ../../client/sass/takeover.scss */
+#takeover #anim-text {
+  z-index: 4;
+  -webkit-animation: remove 0.1s linear 11s forwards;
+  -moz-animation: remove 0.1s linear 11s forwards;
+  -o-animation: remove 0.1s linear 11s forwards;
+  animation: remove 0.1s linear 11s forwards;
+}
+/* line 439, ../../client/sass/takeover.scss */
+#takeover #anim-text > div {
+  opacity: 0;
+}
+/* line 443, ../../client/sass/takeover.scss */
+#takeover #anim-text .one {
+  -webkit-animation: text-in 1s linear 6s forwards;
+  -moz-animation: text-in 1s linear 6s forwards;
+  -o-animation: text-in 1s linear 6s forwards;
+  animation: text-in 1s linear 6s forwards;
+}
+/* line 448, ../../client/sass/takeover.scss */
+#takeover #anim-text .one .out {
+  background: url(/img/text-one.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: text-out 0.3s linear 10.5s forwards;
+  -moz-animation: text-out 0.3s linear 10.5s forwards;
+  -o-animation: text-out 0.3s linear 10.5s forwards;
+  animation: text-out 0.3s linear 10.5s forwards;
+}
+/* line 457, ../../client/sass/takeover.scss */
+#takeover #anim-text .game {
+  -webkit-animation: text-in 1s linear 6.5s forwards;
+  -moz-animation: text-in 1s linear 6.5s forwards;
+  -o-animation: text-in 1s linear 6.5s forwards;
+  animation: text-in 1s linear 6.5s forwards;
+}
+/* line 462, ../../client/sass/takeover.scss */
+#takeover #anim-text .game .out {
+  background: url(/img/text-game.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: text-out 0.3s linear 10.5s forwards;
+  -moz-animation: text-out 0.3s linear 10.5s forwards;
+  -o-animation: text-out 0.3s linear 10.5s forwards;
+  animation: text-out 0.3s linear 10.5s forwards;
+}
+/* line 471, ../../client/sass/takeover.scss */
+#takeover #anim-text .toglory {
+  -webkit-animation: text-in 1s linear 7s forwards;
+  -moz-animation: text-in 1s linear 7s forwards;
+  -o-animation: text-in 1s linear 7s forwards;
+  animation: text-in 1s linear 7s forwards;
+}
+/* line 476, ../../client/sass/takeover.scss */
+#takeover #anim-text .toglory .out {
+  background: url(/img/text-toglory.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: text-out 0.3s linear 10.5s forwards;
+  -moz-animation: text-out 0.3s linear 10.5s forwards;
+  -o-animation: text-out 0.3s linear 10.5s forwards;
+  animation: text-out 0.3s linear 10.5s forwards;
+}
+/* line 486, ../../client/sass/takeover.scss */
+#takeover #finalframe {
+  opacity: 0;
+  z-index: 2;
+  -webkit-animation: ff .1s linear 7.5s forwards;
+  -moz-animation: ff .1s linear 7.5s forwards;
+  -o-animation: ff .1s linear 7.5s forwards;
+  animation: ff .1s linear 7.5s forwards;
+}
+/* line 494, ../../client/sass/takeover.scss */
+#takeover #finalframe .bg {
+  background: url(/img/ff-bg.png) no-repeat;
+  background-size: cover;
+}
+/* line 501, ../../client/sass/takeover.scss */
+#takeover #finalframe .cta {
+  background: url(/img/ff-tune-in.png) no-repeat;
+  background-size: contain;
+}
+/* line 508, ../../client/sass/takeover.scss */
+#takeover #finalframe .trophy {
+  background: url(/img/ff-trophy.png) no-repeat;
+  background-size: contain;
+}
+/* line 515, ../../client/sass/takeover.scss */
+#takeover #finalframe .video {
+  font-size: 1vw;
+  top: 50%;
+  left: 50%;
+  width: 53.1em;
+  height: 29.9em;
+  transform: translate(-50%, -50%);
+}
+/* line 524, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.8em;
+  height: 4.8em;
+  transform: translate(50%, -50%);
+  box-sizing: border-box;
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+}
+/* line 536, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .close-btn span:first-child {
+  position: absolute;
+  display: block;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 549, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .close-btn span:last-child {
+  position: absolute;
+  display: block;
+  top: .4em;
+  left: .4em;
+  z-index: 1;
+  width: 4em;
+  height: 4em;
+  background: url(/img/btn-close.png) no-repeat;
+  background-size: contain;
+}
+/* line 561, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .close-btn:hover span:first-child {
+  -webkit-animation: close-btn .2s linear 0s forwards;
+  -moz-animation: close-btn .2s linear 0s forwards;
+  -o-animation: close-btn .2s linear 0s forwards;
+  animation: close-btn .2s linear 0s forwards;
+}
+/* line 566, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5.8em;
+  height: 5.8em;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+}
+/* line 578, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .play-btn span:first-child {
+  position: absolute;
+  display: block;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 591, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .play-btn span:last-child {
+  position: absolute;
+  display: block;
+  top: .4em;
+  left: .4em;
+  z-index: 1;
+  width: 5em;
+  height: 5em;
+  background: url(/img/btn-play.png) no-repeat;
+  background-size: contain;
+}
+/* line 603, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .play-btn:hover span:first-child {
+  -webkit-animation: close-btn .2s linear 0s forwards;
+  -moz-animation: close-btn .2s linear 0s forwards;
+  -o-animation: close-btn .2s linear 0s forwards;
+  animation: close-btn .2s linear 0s forwards;
+}
+/* line 608, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .watch-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10.3em;
+  height: 8em;
+  background: url(/img/btn-watch.png) no-repeat;
+  background-size: contain;
+  transform: translate(50%, -25%);
+  cursor: pointer;
+}
+/* line 619, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .watch-btn span {
+  position: absolute;
+  display: block;
+  border: 2px solid white;
+  width: 4.6em;
+  height: 4.6em;
+  border-radius: 4.6em;
+  top: -0.4em;
+  left: 2.7em;
+}
+/* line 630, ../../client/sass/takeover.scss */
+#takeover #finalframe .video .watch-btn:hover span {
+  -webkit-animation: close-btn .2s linear 0s forwards;
+  -moz-animation: close-btn .2s linear 0s forwards;
+  -o-animation: close-btn .2s linear 0s forwards;
+  animation: close-btn .2s linear 0s forwards;
+}
+/* line 635, ../../client/sass/takeover.scss */
+#takeover #finalframe .video video {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 2px 8px #000;
+  -moz-box-shadow: 1px 2px 8px #000;
+  box-shadow: 1px 2px 8px #000;
+}
+/* line 644, ../../client/sass/takeover.scss */
+#takeover #finalframe .video.playing .close-btn {
+  display: block;
+}
+/* line 648, ../../client/sass/takeover.scss */
+#takeover #finalframe .video.playing .watch-btn {
+  display: none;
+}
+/* line 652, ../../client/sass/takeover.scss */
+#takeover #finalframe .video.playing .play-btn {
+  display: block;
+}
+/* line 656, ../../client/sass/takeover.scss */
+#takeover #finalframe .video.playing video {
+  display: block;
+}
+/* line 663, ../../client/sass/takeover.scss */
+#takeover #close-takeover-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  z-index: 6;
+  cursor: pointer;
+}
+/* line 673, ../../client/sass/takeover.scss */
+#takeover #close-takeover-btn span:first-child {
+  position: absolute;
+  display: block;
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 686, ../../client/sass/takeover.scss */
+#takeover #close-takeover-btn span:last-child {
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: url(/img/btn-close.png) no-repeat;
+  background-size: contain;
+}
+/* line 698, ../../client/sass/takeover.scss */
+#takeover #close-takeover-btn:hover span:first-child {
+  -webkit-animation: close-btn .2s linear 0s forwards;
+  -moz-animation: close-btn .2s linear 0s forwards;
+  -o-animation: close-btn .2s linear 0s forwards;
+  animation: close-btn .2s linear 0s forwards;
+}
+
+@-webkit-keyframes close-btn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes close-btn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-o-keyframes close-btn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes close-btn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

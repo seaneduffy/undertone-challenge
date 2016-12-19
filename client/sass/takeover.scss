@@ -1,0 +1,708 @@
+// name, duration, timing function, delay, direction, iterations, fill mode, play state
+@mixin animation($animate...) {
+	$max: length($animate);
+	$animations: '';
+
+	@for $i from 1 through $max {
+		$animations: #{$animations + nth($animate, $i)};
+
+		@if $i < $max {
+			$animations: #{$animations + ", "};
+		}
+	}
+	-webkit-animation: $animations;
+	-moz-animation:    $animations;
+	-o-animation:      $animations;
+	animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $color;
+		-moz-box-shadow:inset $top $left $blur $color;
+		box-shadow:inset $top $left $blur $color;
+	} @else {
+		-webkit-box-shadow: $top $left $blur $color;
+		-moz-box-shadow: $top $left $blur $color;
+		box-shadow: $top $left $blur $color;
+	}
+}
+
+
+// Timing values
+$takeoverFadeInDelay: .5s;
+$takeoverFadeInDuration: .5s;
+$trophyDelay: $takeoverFadeInDelay + $takeoverFadeInDuration + .5s;
+$trophyDuration: 1s;
+$confettiDelay: $takeoverFadeInDelay + $takeoverFadeInDuration + .5s;
+$confettiDuration: 5s;
+$panelCloseDuration: .5s;
+$panelCloseDelay: $confettiDelay + 4s;
+$textInDuration: 1s;
+$textInDelayOne: $panelCloseDelay + $panelCloseDuration;
+$textInDelayGame: $textInDelayOne + $textInDuration / 2;
+$textInDelayToGlory: $textInDelayGame + $textInDuration / 2;
+$logoDuration: .5s;
+$logoDelay: $textInDelayToGlory + $textInDuration / 2;
+$panelOpenDuration: .5s;
+$panelOpenDelay: $logoDelay + 3s;
+$logoOutDuration: $panelOpenDuration;
+$logoOutDelay: $panelOpenDelay;
+$textOutDelay: $panelOpenDelay;
+$textOutDuration: .3s;
+$removeDelay: $panelOpenDelay + $panelOpenDuration;
+//$removeDelay: .1s;
+
+.abs-pos {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fullscreen {
+	width: 100vw;
+	height: 100vh;
+}
+
+@include keyframes(takeover) {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@include keyframes('confetti-ver1') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-150vh);}
+}
+
+@include keyframes('confetti-ver2') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-170vh);}
+}
+
+@include keyframes('confetti-ver3') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-190vh);}
+}
+
+@include keyframes('confetti-ver4') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-210vh);}
+}
+
+@include keyframes('confetti-ver5') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-230vh);}
+}
+
+@include keyframes('confetti-ver6') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-250vh);}
+}
+
+@include keyframes('confetti-hor1') {
+	from {transform: translateX(0);}
+	to {transform: translateX(-30vw);}
+}
+
+@include keyframes('confetti-hor2') {
+	from {transform: translateX(0);}
+	to {transform: translateX(-20vw);}
+}
+
+@include keyframes('confetti-hor3') {
+	from {transform: translateX(0);}
+	to {transform: translateX(-10vw);}
+}
+
+@include keyframes('confetti-hor4') {
+	from {transform: translateX(0);}
+	to {transform: translateX(10vw);}
+}
+
+@include keyframes('confetti-hor5') {
+	from {transform: translateX(0);}
+	to {transform: translateX(20vw);}
+}
+
+@include keyframes('confetti-hor6') {
+	from {transform: translateX(0);}
+	to {transform: translateX(30vw);}
+}
+
+@include keyframes('confetti-rot1') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-270deg);}
+}
+
+@include keyframes('confetti-rot2') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-180deg);}
+}
+
+@include keyframes('confetti-rot3') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-90deg);}
+}
+
+@include keyframes('confetti-rot4') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(90deg);}
+}
+
+@include keyframes('confetti-rot5') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+@include keyframes('confetti-rot6') {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(270deg);}
+}
+
+@include keyframes('panel-portland-close') {
+	from {transform: translateX(-100vw);}
+	to {transform: translateX(0);}
+}
+
+@include keyframes('panel-dallas-close') {
+	from {transform: translateX(100vw);}
+	to {transform: translateX(0);}
+}
+
+@include keyframes('panel-portland-open') {
+	from {transform: translateX(0)}
+	to {transform: translateX(-100vw)}
+}
+
+@include keyframes('panel-dallas-open') {
+	from {transform: translateX(0)}
+	to {transform: translateX(100vw)}
+}
+
+@include keyframes('logo-portland') {
+	0% {opacity: 0; transform: scale(5) translateX(10vw)}
+	50% {opacity: .5; transform: scale(2.5) translateX(8vw)}
+	90% {opacity: .9; transform: scale(1.4) translateX(5vw)}
+	100% {opacity: 1; transform: scale(1) translateX(0)}
+}
+
+@include keyframes('logo-dallas') {
+	0% {opacity: 0; transform: scale(5) translateX(-10vw)}
+	50% {opacity: .5; transform: scale(2.5) translateX(-8vw)}
+	90% {opacity: .9; transform: scale(1.4) translateX(-5vw)}
+	100% {opacity: 1; transform: scale(1) translateX(0)}
+}
+
+@include keyframes('logo-portland-out') {
+	from {transform: translateX(0)}
+	to {transform: translateX(-100vw)}
+}
+
+@include keyframes('logo-dallas-out') {
+	from {transform: translateX(0)}
+	to {transform: translateX(100vw)}
+}
+
+@include keyframes('text-in') {
+	0% {opacity: 0; transform: scale(4)}
+	50% {opacity: 1; transform: scale(1)}
+	75% {opacity: 1; transform: scale(1.1)}
+	100% {opacity: 1; transform: scale(1)}
+}
+
+@include keyframes('text-out') {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+@include keyframes('ff') {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@include keyframes('trophy') {
+	from {transform: translateY(0);}
+	to {transform: translateY(-100%);}
+}
+
+@include keyframes('remove') {
+	from {transform: translateY(0)}
+	to {transform: translateY(-200vh)}
+}
+
+#takeover {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	opacity: 0;
+	@include animation('takeover ' + $takeoverFadeInDuration + ' linear ' + $takeoverFadeInDelay + ' forwards');
+
+	svg {
+		opacity: 0;
+	}
+
+	#trophy-hoist {
+		position: absolute;
+		z-index: 0;
+		top: 100%;
+		left: 40%;
+		width: 100vw;
+		height: 80vh;
+		transform: translateY(0);
+		background: url(/img/cup-hoist.png) no-repeat;
+		background-size: contain;
+		@include animation('trophy ' + $trophyDuration + ' ease-in ' + $trophyDelay + ' forwards');
+
+	}
+
+	#confetti-container {
+		@extend .abs-pos;
+		@extend .fullscreen;
+		z-index: 1;
+
+		.piece, .piece-ver1, .piece-ver2, .piece-ver3, .piece-hor1, .piece-hor2, .piece-hor3 {
+			position: absolute;
+		}
+
+		.piece {
+			top: 100%;
+
+			svg {
+				opacity: 1;
+			}
+		}
+
+		.piece-ver1 {
+			@include animation('confetti-ver1 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-ver2 {
+			@include animation('confetti-ver2 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-ver3 {
+			@include animation('confetti-ver3 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-hor1 {
+			@include animation('confetti-hor1 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-hor2 {
+			@include animation('confetti-hor2 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-hor3 {
+			@include animation('confetti-hor3 ' + $confettiDuration + ' ease-out ' + $confettiDelay + ' forwards');
+		}
+
+		.piece-rot1 {
+			@include animation('confetti-rot1 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+
+		.piece-rot2 {
+			@include animation('confetti-rot2 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+
+		.piece-rot3 {
+			@include animation('confetti-rot3 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+
+		.piece-rot4 {
+			@include animation('confetti-rot4 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+
+		.piece-rot5 {
+			@include animation('confetti-rot5 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+
+		.piece-rot6 {
+			@include animation('confetti-rot6 ' + $confettiDuration + ' linear ' + $confettiDelay + ' forwards');	
+		}
+	}
+
+	#panels {
+		@extend .abs-pos;
+		@extend .fullscreen;
+		z-index: 3;
+		@include animation('remove 0.1s linear ' + $removeDelay + ' forwards');
+
+		.portland {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			background: url(/img/panel-portland.png) no-repeat;
+			background-position: top left;
+			background-size: 100vw auto;
+			
+		}
+
+		.dallas {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			background: url(/img/panel-dallas.png) no-repeat;
+			background-position: top right;
+			background-size: 100vw auto;
+		}
+
+		.portland-close {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			transform: translateX(-100vw);
+			@include animation('panel-portland-close ' + $panelCloseDuration + ' linear ' + $panelCloseDelay + ' forwards');
+		}
+
+		.dallas-close {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			transform: translateX(100vw);
+			@include animation('panel-dallas-close ' + $panelCloseDuration + ' linear ' + $panelCloseDelay + ' forwards');
+		}
+
+		.portland-open {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			@include animation('panel-portland-open ' + $panelOpenDuration + ' linear ' + $panelOpenDelay + ' forwards');
+		}
+
+		.dallas-open {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			@include animation('panel-dallas-open ' + $panelOpenDuration + ' linear ' + $panelOpenDelay + ' forwards');
+		}
+
+	}
+
+	#logos {
+		@extend .abs-pos;
+		@extend .fullscreen;
+		z-index: 4;
+		@include animation('remove 0.1s linear ' + $removeDelay + ' forwards');
+
+		.dallas {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			opacity: 0;
+			@include animation('logo-dallas ' + $logoDuration + ' ease-in ' + $logoDelay + ' forwards');
+
+			.out {
+				@extend .abs-pos;
+				@extend .fullscreen;
+				background: url(/img/logo-dallas.png) no-repeat;
+				background-size: contain;
+				@include animation('logo-dallas-out ' + $logoOutDuration + ' linear ' + $logoOutDelay + ' forwards');
+			}
+		}
+
+		.portland {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			opacity: 0;
+			@include animation('logo-portland ' + $logoDuration + ' ease-in ' + $logoDelay + ' forwards');
+
+			.out {
+				@extend .abs-pos;
+				@extend .fullscreen;
+				background: url(/img/logo-portland.png) no-repeat;
+				background-size: contain;
+				@include animation('logo-portland-out ' + $logoOutDuration + ' linear ' + $logoOutDelay + ' forwards');
+			}
+		}
+	}
+
+	#anim-text {
+		@extend .abs-pos;
+		@extend .fullscreen;
+		z-index: 4;
+		@include animation('remove 0.1s linear ' + $removeDelay + ' forwards');
+
+		& > div {
+			opacity: 0;
+		}
+
+		.one {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			@include animation('text-in ' + $textInDuration + ' linear ' + $textInDelayOne + ' forwards');
+
+			.out {
+				@extend .abs-pos;
+				@extend .fullscreen;
+				background: url(/img/text-one.png) no-repeat;
+				background-size: contain;
+				@include animation('text-out ' + $textOutDuration + ' linear ' + $textOutDelay + ' forwards');
+			}
+		}
+
+		.game {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			@include animation('text-in ' + $textInDuration + ' linear ' + $textInDelayGame + ' forwards');
+
+			.out {
+				@extend .abs-pos;
+				@extend .fullscreen;
+				background: url(/img/text-game.png) no-repeat;
+				background-size: contain;
+				@include animation('text-out ' + $textOutDuration + ' linear ' + $textOutDelay + ' forwards');
+			}
+		}
+
+		.toglory {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			@include animation('text-in ' + $textInDuration + ' linear ' + $textInDelayToGlory + ' forwards');
+
+			.out {
+				@extend .abs-pos;
+				@extend .fullscreen;
+				background: url(/img/text-toglory.png) no-repeat;
+				background-size: contain;
+				@include animation('text-out ' + $textOutDuration + ' linear ' + $textOutDelay + ' forwards');
+			}
+		}
+	}
+
+	#finalframe {
+		@extend .abs-pos;
+		@extend .fullscreen;
+		opacity: 0;
+		z-index: 2;
+		@include animation('ff .1s linear ' + $logoDelay + ' forwards');
+		//@include animation('ff .1s linear 0s forwards');
+
+		.bg {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			background: url(/img/ff-bg.png) no-repeat;
+			background-size: cover;
+		}
+
+		.cta {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			background: url(/img/ff-tune-in.png) no-repeat;
+			background-size: contain;
+		}
+
+		.trophy {
+			@extend .abs-pos;
+			@extend .fullscreen;
+			background: url(/img/ff-trophy.png) no-repeat;
+			background-size: contain;
+		}
+
+		.video {
+			@extend .abs-pos;
+			font-size: 1vw;
+			top: 50%;
+			left: 50%;
+			width: 53.1em;
+			height: 29.9em;
+			transform: translate(-50%, -50%);
+
+			.close-btn {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 4.8em;
+				height: 4.8em;
+				transform: translate(50%, -50%);
+				box-sizing: border-box;
+				z-index: 2;
+				display: none;
+				cursor: pointer;
+
+				span:first-child {
+					position: absolute;
+					display: block;
+					border: 2px solid white;
+					border-radius: 100%;
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					top: 0;
+					left: 0;
+					z-index: 0;
+				}
+
+				span:last-child {
+					position: absolute;
+					display: block;
+					top: .4em;
+					left: .4em;
+					z-index: 1;
+					width: 4em;
+					height: 4em;
+					background: url(/img/btn-close.png) no-repeat;
+					background-size: contain;
+				}
+
+				&:hover span:first-child {
+					@include animation('close-btn .2s linear 0s forwards');
+				}
+			}
+
+			.play-btn {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 5.8em;
+				height: 5.8em;
+				transform: translate(-50%, -50%);
+				box-sizing: border-box;
+				z-index: 2;
+				display: none;
+				cursor: pointer;
+
+				span:first-child {
+					position: absolute;
+					display: block;
+					border: 2px solid white;
+					border-radius: 100%;
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					top: 0;
+					left: 0;
+					z-index: 0;
+				}
+
+				span:last-child {
+					position: absolute;
+					display: block;
+					top: .4em;
+					left: .4em;
+					z-index: 1;
+					width: 5em;
+					height: 5em;
+					background: url(/img/btn-play.png) no-repeat;
+					background-size: contain;
+				}
+
+				&:hover span:first-child {
+					@include animation('close-btn .2s linear 0s forwards');
+				}
+			}
+
+			.watch-btn {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 10.3em;
+				height: 8em;
+				background: url(/img/btn-watch.png) no-repeat;
+				background-size: contain;
+				transform: translate(50%, -25%);
+				cursor: pointer;
+
+				span {
+					position: absolute;
+					display: block;
+					border: 2px solid white;
+					width: 4.6em;
+					height: 4.6em;
+					border-radius: 4.6em;
+					top: -0.4em;
+					left: 2.7em;
+				}
+
+				&:hover span {
+					@include animation('close-btn .2s linear 0s forwards');
+				}
+			}
+
+			video {
+				display: none;
+				width: 100%;
+				height: 100%;
+				@include box-shadow(1px, 2px, 8px, #000);
+			}
+
+			&.playing {
+
+				.close-btn {
+					display: block;
+				}
+
+				.watch-btn {
+					display: none;
+				}
+
+				.play-btn {
+					display: block;
+				}
+
+				video {
+					display: block;
+				}
+			}
+		}
+	}
+
+	#close-takeover-btn {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 48px;
+		height: 48px;
+		box-sizing: border-box;
+		z-index: 6;
+		cursor: pointer;
+
+		span:first-child {
+			position: absolute;
+			display: block;
+			border: 1px solid white;
+			border-radius: 100%;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		span:last-child {
+			position: absolute;
+			display: block;
+			top: 4px;
+			left: 4px;
+			z-index: 1;
+			width: 40px;
+			height: 40px;
+			background: url(/img/btn-close.png) no-repeat;
+			background-size: contain;
+		}
+
+		&:hover span:first-child {
+			@include animation('close-btn .2s linear 0s forwards');
+		}
+		
+	}
+}
+
+@include keyframes('close-btn') {
+	from {transform: scale(.8)}
+	to {transform: scale(1)}
+}
